@@ -1,0 +1,483 @@
+/*-------应用管理 start--------*/
+.appMana{
+  padding-left: 12px;
+  overflow: auto;
+  .app_mana_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 12px;
+    .ivu-input-with-prefix{
+      padding-left: 26px;
+    }
+  }
+  .app_mana_contain{
+    padding-right: 12px;
+    .ivu-table-wrapper{
+      overflow: initial;
+    }
+    .ivu-table{
+      overflow: initial;
+      .ivu-table-header{
+        th{
+          padding: 0;
+          height: 32px;
+          background: #DEEEFE;
+          font-weight: 400;
+          font-size: 14px;
+          color: #3B72A8;
+        }
+      }
+      .ivu-table-body{
+        .ivu-table-row{
+          .ivu-table-cell{
+            height: 21px;
+            overflow: initial;
+            .ivu-tooltip-inner{
+              white-space: initial;
+            }
+          }
+        }
+      }
+    }
+  }
+  .app_mana_footer{
+    margin-top: 12px;
+    padding-right: 12px;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+/*-------应用管理 end--------*/
+
+/*-------报表管理 start--------*/
+.reportMana{
+  padding: 0 12px;
+  overflow: auto;
+  .reportMana_nodata{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    .no_report{
+      width: 270px;
+      height: 56px;
+      background: #3B72A8;
+      border-radius: 2px;
+      font-size: 24px;
+      color: #fff;
+      line-height: 56px;
+    }
+  }
+  .report_mana{
+    .report_mana_top{
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 20px;
+      .ivu-input-with-prefix{
+        padding-left: 26px;
+      }
+    }
+    .report_mana_contain{
+      .ivu-table{
+        .ivu-table-header{
+          th{
+            padding: 0;
+            height: 32px;
+            background: #DEEEFE;
+            font-weight: 400;
+            font-size: 14px;
+            color: #3B72A8;
+          }
+        }
+      }
+    }
+    .report_mana_footer{
+      margin-top: 12px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .footer_left_wrap{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .del_btn_wrap{
+          width:64px;
+          height:30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background:#FFFFFF;
+          border:1px solid #DCE5E8;
+          border-radius:2px;
+        }
+      }
+    }
+  }
+}
+/*-------报表管理 end--------*/
+
+/*-------模型管理 end--------*/
+.modelMana{
+  padding-left: 12px;
+  overflow: auto;
+  .model_mana_top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding-right: 12px;
+    .ivu-input-with-prefix{
+      padding-left: 26px;
+    }
+  }
+  .model_mana_contain{
+    padding-right: 12px;
+    display: flex;
+    justify-content: flex-start;
+    .left_model{
+      flex: 2;
+      width: 0;
+    }
+    .right_model{
+      flex: 3;
+      width: 0;
+      margin-left: 12px;
+      .ivu-table-wrapper:first-child{
+        .ivu-table-header{
+          border-bottom: 1px solid #C5D0D4;
+        }
+        .ivu-table{
+          td{
+            background: #EAEEF2;
+          }
+        }
+      }
+      .model_mana_footer{
+        margin-top: 12px;
+        display: flex;
+        justify-content: flex-end;
+      }
+    }
+  }
+}
+/*-------模型管理 end--------*/
+
+/*-------应用中心 图标样式 start--------*/
+.app_icon{
+  width: 16px;
+  height: 16px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.app_icon_release{
+  width: 17px;
+  height: 17px;
+  margin-left: 12px;
+  cursor: pointer;
+  background: url(~@/assets/images/appCenter/app_release.png);
+  background-size: 100% 100%;
+}
+.app_icon_search{
+  background: url(~@/assets/images/appCenter/app_search.png);
+  background-size: 100% 100%;
+}
+.app_icon_edit{
+  background: url(~@/assets/images/appCenter/app_edit.png);
+  background-size: 100% 100%;
+}
+.app_icon_del{
+  background: url(~@/assets/images/appCenter/app_del.png);
+  background-size: 100% 100%;
+}
+.app_icon_copy{
+  background: url(~@/assets/images/appCenter/app_copy.png);
+  background-size: 100% 100%;
+}
+.app_icon_add{
+  background: url(~@/assets/images/appCenter/app_add.png);
+  background-size: 100% 100%;
+}
+.app_icon_set{
+  background: url(~@/assets/images/appCenter/app_set.png);
+  background-size: 100% 100%;
+}
+/*-------应用中心 图标样式 end--------*/
+
+
+/***模型应用 start*/
+.modelAppManage{
+  overflow: auto;
+  padding: 0px 10px 20px;
+  text-align: left;
+  .header{
+    min-width: 800px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .ivu-input {
+      padding: 0 0 0 32px;
+    }
+    .header-add-role {
+      span {
+        color: rgb(59, 114, 168);
+      }
+      img {
+        width: 16px;
+        vertical-align: text-top;
+      }
+    }
+  }
+  .addRole{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .content{
+    min-width: 800px;
+    flex: 1;
+    .ivu-btn{
+      width: 64px;
+      height: 32px;
+      padding: 0;
+      .ivu-icon{
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    .ivu-table-wrapper{
+      .ivu-table{
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+        .ivu-table-cell{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .ivu-table-body{
+          .ivu-checkbox-wrapper{
+            margin-right: 0;
+          }
+          .icon-bg {
+            display: inline-block;
+            margin-right: 12px;
+            width: 14px;
+            height: 14px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: 100% 100%;
+            vertical-align: sub;
+          }
+          .icon-role-auth {
+            background-image: url('~@/assets/images/systemManage/role_auth.png');
+          }
+          .icon-role-edit {
+            background-image: url('~@/assets/images/systemManage/role_edit.png');
+          }
+          .icon-role-delete {
+            background-image: url('~@/assets/images/systemManage/role_delete.png');
+          }
+          .icon-role-view {
+            background-image: url('~@/assets/images/appCenter/app_search.png');
+          }
+          .icon-set {
+            background-image: url('~@/assets/images/alarmCenter/shezhi.png');
+          }
+          .icon-add {
+            background-image: url('~@/assets/images/systemManage/role_add.png');
+          }
+        }
+      }
+    }
+  }
+}
+
+.model-detail{
+  padding: 0 24px 0 12px;
+  .detail_tit{
+    font-size: 18px;
+    text-align: left;
+    color: #999999;
+    margin: 0 0 24px;
+  }
+  .detail_box{
+    background: #FFFFFF;
+    border: 1px solid #EAEEF2;
+    border-radius:2px 2px 0px 0px;
+    text-align: left;
+    margin: 0 0 12px;
+    padding: 24px;
+    .cond_tit{
+      color: #333333;
+      font-size: 14px;
+    }
+    .det_tit{
+      color: #333333;
+      font-size: 16px;
+      font-weight: bold;
+    }
+    .cond_wrap{
+      padding: 12px 0;
+      line-height: 36px;
+      .li_tit{
+        display: inline-block;
+        vertical-align: top;
+        width: 84px;
+        text-align: right;
+        color: #999999;
+        font-size: 14px;
+      }
+      .ivu-select{
+        width: 360px;
+      }
+      .var_li{
+        margin: 0 0 12px;
+        .li_tit {
+          height: 36px;
+          line-height: 36px;
+        }
+        p{
+          padding: 0 0 18px;
+          color: #333333;
+          font-size: 14px;
+          .icon_conf{
+            width: 16px;
+            height: 16px;
+            background: url('~@/assets/images/alarmCenter/shezhi.png') no-repeat center center;
+          }
+        }
+        .li_row{
+          padding: 12px 0 0;
+        }      
+      }
+      .rule_wrap{
+        background: #FCFEFF;
+        border: 1px dashed #EAEEF2;
+        width: 66.667%;
+        border-radius: 2px;
+        padding: 12px 24px 24px;
+        min-width: 800px;
+        box-sizing: border-box;
+        overflow: hidden;
+        .rule_li{
+          margin: 12px 0 0;
+          span{
+            color: #333333;
+            font-size: 14px;   
+          }
+          .comp_con{
+            margin: 0 24px 0;
+          }
+        }
+      }
+      .ivu-checkbox-group{
+        display: inline-block;
+      }
+      .alarm_li {
+        height: 36px;
+        line-height: 36px;
+      }
+      .ivu-select {
+        height: 36px;
+        .ivu-select-selection {
+          height: 36px;
+          .ivu-select-selected-value {
+            height: 36px;
+            line-height: 36px;
+          }
+        }
+      }
+      .event_name {
+        width: 120px;
+      }
+      .event_name_detail {
+        width: 360px;
+        display: inline-block;
+        height: 36px;
+        line-height: 36px;
+        padding-left: 12px;
+        color: #999999;
+        background: #DCE5E8;
+        border-radius: 2px;
+      }
+      .alarm_li:nth-child(2){
+        margin:  12px 0;
+      }
+      .alarm_form{
+        background: #FCFEFF;
+        border: 1px dashed #EAEEF2;
+        width: 66.667%;
+        border-radius: 2px;
+        padding: 24px;
+        min-width: 800px;
+        box-sizing: border-box;
+        overflow: hidden;
+        margin: 24px 0;
+        .form_li{
+          display: flex;
+          .li_tit{
+            width: 88px;
+            color: #999999;
+          }
+          .li_con{
+            flex: 1;
+            .ivu-input-wrapper{
+              width: 360px;
+            }
+            .alarm_tit{
+              color: #333333;
+              font-size: 14px;
+            }
+            .btn_edit{
+              color: #3B72A8;
+              font-size: 12px;
+              cursor: pointer;
+              margin: 0 0 0 12px;
+            }
+          }
+        }
+        .form_li:first-child{
+          margin: 0 0 22px;
+        }
+        .form_li:nth-child(2){
+          margin: 0;
+        }
+      }
+      .model_li{
+        margin: 0 0 12px;
+        .condi_bar{
+          .ivu-select{
+            width: 160px;
+          }
+          .inter_line{
+            display: inline-block;
+            vertical-align: middle;
+            width: 20px;
+            height: 1px;
+            background: #DCE5E8;
+          }
+        }
+        .var_bar{
+          margin: 0 12px;
+          em{
+            font-style: normal;
+          }
+        }
+      }
+    }
+    .wrap_foot{
+      margin: 84px 0 0 88px;
+      .ivu-btn{
+        width: 120px;
+        height: 42px;
+      }
+    }
+  }
+  .alarm_box {
+    .cond_wrap {
+      line-height: 28px;
+    }
+  }
+}
+/***模型应用 end*/

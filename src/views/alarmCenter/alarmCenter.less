@@ -1,0 +1,248 @@
+.alarmCenter{
+    position: relative;
+    // height: calc(100% - 48px);
+    display: flex;
+    flex-direction: column;
+    .alarm_notice{
+        margin-bottom: 24px;
+        padding: 0 12px;
+        font-size: 14px;
+        color: #333;
+        text-align: left;
+        position: relative;
+        .notice_title{
+            width: 95%;
+            height: 50px;
+            line-height: 66px;
+            position: absolute;
+            top: 1px;
+            left: 44px;
+            background:#fff;
+            font-size: 18px;
+            font-weight: 700;
+        }
+        .notice_wrap{
+            min-width:1174px;
+            height:194px;
+            padding: 50px 0 22px 32px;
+            background:#fff;
+            border:1px solid #ebf0f2;
+            border-radius:2px;
+            overflow-y: auto;
+            .notice_list{
+                padding-top: 11px;
+            }
+        }
+    }
+    .alarm_class{
+        display: flex;
+        justify-content: flex-start;
+        margin-bottom: 24px;
+        padding: 0 12px;
+        font-size: 14px;
+        color: #333;
+        flex: 0 0 150px;
+        text-align: left;
+        .class_item{
+            cursor: pointer;
+            width:275px;
+            height:150px;
+            padding: 42px 0 42px 24px;
+            margin-right: 24px;
+            background:#fff;
+            border:1px solid #EBF0F2;
+            border-radius:2px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: flex-start;
+            &:last-child{
+                margin-right: 0; 
+            }
+            .item_left{
+                width: 64px;
+                height: 64px;
+                margin-right: 24px;
+            }
+            .item_right{
+                display: flex;
+                flex-direction: column;
+                margin-top: -9px;
+            }
+            .item_type{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-bottom: 26px;
+            }
+            .item_total{
+                display: flex;
+                justify-content: space-between;
+                align-items: baseline;
+            }
+        }
+    }
+    .alarm_box {
+      flex: 1;
+      overflow: auto;
+      display: flex;
+      flex-direction: column;
+    }
+    .re_top {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        flex: 0 0 34px;
+        padding: 0 12px;
+        margin-bottom: 24px;
+        .re_select{
+            min-width: 400px;
+        }
+        .re_time{
+            min-width: 422px;
+        }
+        .re_button{
+            min-width: 126px;
+            span{
+                color: #fff;
+            }
+        }
+        span {
+            color: #999999;
+            font-size: 14px;
+        }
+    }
+    .re_contain{
+        flex: 1;
+        height: calc(100% - 44px);
+        overflow: hidden;
+        padding: 0 12px;
+        position: relative;
+        .ivu-table-wrapper{
+            overflow: initial;
+            height: 100%;
+        }
+        .ivu-table{
+            overflow: initial;
+            .ivu-table-header{
+                th{
+                    padding: 0;
+                    height: 32px;
+                    background: #DEEEFE;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: #3B72A8;
+                }
+            }
+            .ivu-table-body {
+                height: calc(100% - 32px);
+                overflow-y: auto;
+                overflow-x: hidden;
+            }
+            .ivu-table-row{
+                & > td:first-child{
+                    .ivu-table-cell{
+                        padding-right: 0;
+                    }
+                }
+            }
+            .ivu-table-cell{
+                overflow: initial;
+                padding-left: 0;
+                & > div{
+                    position: relative;
+                    overflow: initial;
+                }
+                & > span{
+                    white-space: nowrap;
+                }
+                .re_remark{
+                    white-space: nowrap;
+                    word-break: break-all;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    &:hover{
+                        color: #3B72A8;
+                    }
+                }
+                .ivu-tooltip{
+                    display: flex;
+                    align-items: center;
+                    .ivu-tooltip-rel{
+                        width: 108px;
+                    }
+                    .ivu-tooltip-inner{
+                        width: 332px;
+                        white-space: normal;
+                    }
+                    .ivu-tooltip-arrow {
+                        right: 50px;
+                    }
+                }
+            }
+        }
+        .edit_input{
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+    }
+    .re_footer{
+        flex: 0 0 44px;
+        height: 34px;
+        padding: 0 12px;
+        margin-top: 12px;
+        display: flex;
+        justify-content: flex-end;
+        // justify-content: space-between;
+        align-items: center;
+        .footer_total{
+            color: #999999;
+        }
+        .footer_page{
+            position: relative;
+            color: #999999;
+        }
+        .footer_input{
+            width:42px;
+            height:30px;
+            margin: 0 4px;
+            border:1px solid #DCE5E8;
+            border-radius:2px;
+            text-indent: 10px;
+        }
+    }
+    .re_setting{
+        width:16px;
+        height:16px;
+        background: url(~@/assets/images/alarmCenter/shezhi.png);
+    }
+    .alarm_more{
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        background: url(~@/assets/images/alarmCenter/jia.png);
+    }
+    .alarm_less{
+        position: absolute;
+        top: 4px;
+        left: 6px;
+        background: url(~@/assets/images/alarmCenter/jian.png);
+    }
+    .alarm_point{
+        background: url(~@/assets/images/alarmCenter/alarm_point.png);
+    }
+    .alarm_app{
+        background: url(~@/assets/images/alarmCenter/alarm_app.png);
+    }
+    .alarm_alarm{
+        background: url(~@/assets/images/alarmCenter/alarm_alarm.png);
+        background-size: 100% 100%;
+    }
+    .alarm_abnormal{
+        background: url(~@/assets/images/alarmCenter/alarm_abnormal.png);
+        background-size: 100% 100%;
+    }
+    .ivu-input{
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,63 @@
+.export_wrap{
+    padding: 0 12px;
+    text-align: left;
+    overflow: auto;
+    .export_top{
+        margin-bottom: 24px;
+        .ivu-input{
+            padding-left: 32px;
+        }
+    }
+    .export_list{
+        .export_wrap{
+            min-width:1174px;
+            height:110px;
+            padding: 20px 24px;
+            margin-bottom: 12px;
+            background:#fff;
+            border: 1px solid #EBF0F2;
+            border-radius:2px;
+            box-sizing: border-box;
+            position: relative;
+            .export_title{
+                display: flex;
+                justify-content: space-between;
+                margin-top: -4px;
+                margin-bottom: 14px;
+                font-size: 16px;
+                .export_name{
+                    flex: 9;
+                    margin-right: 62px;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    overflow: hidden;
+                }
+                .export_result{
+                    width: 80px;
+                    color: #3B72A8;
+                }
+            }
+            .export_close{
+                position: absolute;
+                right: 10px;
+                top: 10px;
+                width: 20px;
+                height: 20px;
+                background: url('../../assets/images/modelingTool/x.png');
+                background-size: 100% 100%; 
+                cursor: pointer;
+            }
+        }
+    }
+    .no_export{
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #fff;
+        margin-bottom: 12px;
+        & > p {
+            font-size: 18px;
+        }
+    }
+}

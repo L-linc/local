@@ -1,0 +1,543 @@
+.modeling_tool{
+    height: 100%;
+    position: relative;
+    .ivu-layout{
+        height: 100%;
+        .ivu-layout-header{
+            padding: 0;
+            height: 76px;
+            background: #fff;
+            display: flex;
+            justify-content: flex-start;
+            .header_left{
+                min-width: 230px;
+                border-bottom: 1px solid #ccc;
+                border-right: 1px solid #ccc;
+                box-sizing: border-box;
+                display: flex;
+                flex-direction: column;
+                padding: 4px 6px 11px;
+                background: #F2F2F2;
+                .left_top{
+                    display: flex;
+                    height: 30px;
+                    justify-content: flex-start;
+                    align-items: center;
+                    font-size: 16px;
+                    color: #252525;
+                    .left_logo{
+                        width: 30px;
+                        height: 30px;
+                        background: url(~@/assets/images/modelingTool/logo.png);
+                    }
+                }
+            }
+            .header_right{
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                .right_top{
+                    display: flex;
+                    text-align: left;
+                    line-height: 1;
+                    height: 29px;
+                    box-sizing: border-box;
+                    background: #F0F0F0;
+                    border-bottom: 1px solid #CCC;
+                    .top_items{
+                        position: relative;
+                        overflow: hidden;
+                        flex: 150px 0 1;
+                        display: inline-block;
+                        vertical-align: middle;
+                        height: 27px;
+                        line-height: 27px;
+                        padding-left: 12px;
+                        padding-right: 15px;
+                        border-right: 1px solid #CCCCCC;
+                        box-sizing: border-box;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        cursor: pointer;
+                        span{
+                            display: inline-block;
+                            vertical-align: middle;
+                        }
+                        .item_close{
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            margin-top: 7px;
+                            width: 16px;
+                            height: 16px;
+                            background: url(~@/assets/images/modelingTool/x.png);
+                            background-color: #F0F0F0;
+                        }
+                    }
+                    .top_items_active{
+                        background: #E4E3E4;
+                        .item_close {
+                            background-color: #E4E3E4;
+                        }
+                    }
+                }
+                .right_bottom{
+                    height: 50px;
+                    box-sizing: border-box;
+                    background: -webkit-linear-gradient(#D8D8D8, #E4E3E4); /* Safari 5.1 - 6.0 */
+                    background: -o-linear-gradient(#D8D8D8, #E4E3E4); /* Opera 11.1 - 12.0 */
+                    background: -moz-linear-gradient(#D8D8D8, #E4E3E4); /* Firefox 3.6 - 15 */
+                    background: linear-gradient(#D8D8D8, #E4E3E4); /* 标准的语法 */
+                    border-bottom: 1px solid #ccc;
+                    display: flex;
+                    align-items: center;
+                    .bottom_wrap{
+                        width:100px;
+                        height:32px;
+                        background:#F8F8F8;
+                        border:1px solid #CAC9CA;
+                        border-radius:4px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        line-height: 32px;
+                        margin-right: 12px;
+                        cursor: pointer;
+                        &:first-child{
+                            margin-left: 25px;
+                        }
+                        .w_icon{
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 10px;
+                        }
+                        .variableicon{
+                            background: url(~@/assets/images/modelingTool/variableicon.png);
+                        }
+                        .parametericon{
+                            background: url(~@/assets/images/modelingTool/parametericon.png);
+                        }
+                        .saveicon{
+                            background: url(~@/assets/images/modelingTool/saveicon.png);
+                        }
+                        .releaseicon{
+                            background: url(~@/assets/images/modelingTool/releaseicon.png);
+                        }
+                    }
+                    .bottom_wrap_active{
+                        opacity:0.3;
+                        cursor: no-drop;
+                    }
+                }
+            }
+        }
+        .ivu-layout{
+            .sider_bar{
+                .ivu-layout-sider-children{
+                    height: 100%;
+                }
+                background: #F2F2F2;
+                border-right: 1px solid #ccc;
+                .sider_item{
+                    height: 50%;
+                    box-sizing: border-box;
+                    border-bottom: 1px solid #ccc;
+                    color: #252525;
+                    &:last-child{
+                        border-bottom: none;
+                    }
+                    .sider_item_title{
+                        height: 32px;
+                        background: #FAFAFA;
+                        border-bottom: 1px solid #ccc;
+                        display: flex;
+                        align-items: center;
+                        font-weight:bold;
+                        & > span{
+                            margin-left: 2px;
+                        }
+                        .btn_addmodel{
+                            cursor: pointer;
+                        }
+                    }
+                    .sider_item_row{
+                        height: calc(100% - 32px);
+                        padding: 5px 4px;
+                        overflow: auto;
+                        .row_item{
+                            height:24px;
+                            padding-left: 16px;
+                            line-height:24px;
+                            text-align: left;
+                            border-radius:4px;
+                            cursor: pointer;
+                            white-space: nowrap;
+                        }
+                        .pl32{
+                            padding-left: 32px;
+                        }
+                        .row_item_active{
+                            color: #fff;
+                            background: #337BF7;
+                        }
+                        .row_title{
+                            height:24px;
+                            line-height:24px;
+                            margin-left: 10px;
+                            text-align: left;
+                            cursor: pointer;
+                            & > span{
+                                margin-left: 2px;
+                            }
+                        }
+                    }
+                    .expand_right{
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 4px;
+                        margin-top: -2px;
+                        background: url(~@/assets/images/modelingTool/right.png);
+                    }
+                    .expand_down{
+                        width: 16px;
+                        height: 16px;
+                        margin-left: 4px;
+                        margin-top: -2px;
+                        background: url(~@/assets/images/modelingTool/down.png);
+                    }
+                }
+            }
+        }
+    }
+    .opear_bar{
+        position: absolute;
+        border-radius: 4px;
+        background: #F5F5F5;
+        border: 1px solid #CCCCCC;
+        box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+        p{
+            padding: 5px 30px 5px 15px;
+            text-align: left;
+            color: #252525;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        p:first-child{
+            margin: 6px 0;
+        }
+        p:nth-child(2){
+            border-top: 1px solid #CCCCCC;
+        }
+        p:last-child{
+            margin: 0 0 6px;
+        }
+        p:hover{
+            background: #337BF7;
+            color: #FFFFFF;
+        }
+        hr{
+            display: block;
+            width: 100%;
+            height: 1px;
+            background: #CCCCCC;
+        }
+    }
+    .edit_bar{
+        width: 221px;
+        height: 24px;
+        border-radius: 4px;
+        padding: 2px 4px 2px 25px;
+        background: #337BF7;
+        position: absolute;
+        .ivu-input-wrapper{
+            .ivu-input-icon{
+                height: 16px;
+                line-height: 16px;
+            }
+            .ivu-input{
+                height: 16px;
+                border-radius: 0;
+            }
+        }
+    }
+    .content_wrap{
+        position: relative;
+        padding: 24px;
+        background: #FFFFFF;
+        overflow: auto;
+        .des_wrap{
+            .tit_bar{
+                text-align: left;
+                span{
+                    font-size: 14px;
+                    color: #929292;
+                    display: inline-block;
+                    vertical-align: middle;
+                }
+                .icon_des{
+                    width: 16px;
+                    height: 16px;
+                    background: url(~@/assets/images/modelingTool/down_thinicon.png) center center;
+                    cursor: pointer;
+                }
+                .des_act{
+                    transform: rotate(-180deg);
+                }
+            }
+        }
+        .model_content{
+            text-align: left;
+            color: #252525;
+            white-space: nowrap;
+            .model_tit{
+                font-size: 16px;               
+                padding: 24px 0 5px;
+                .btn_add{
+                    display: inline-block;
+                    background: #337BF7;
+                    border: 1px solid #2B6BD8;
+                    box-sizing: border-box;
+                    color: #FFFFFF;
+                    font-size: 12px;
+                    border-radius:4px;
+                    width: 84px;
+                    text-align: center;
+                    height: 24px;
+                    line-height: 24px;
+                    cursor: pointer;
+                    margin: 0 0 0 12px;
+                }
+            }
+            .model_li{
+                margin: 0 0 18px 0;
+                .ivu-cascader{
+                    display: inline-block;
+                    text-align: center;
+                    // border: 1px solid #CCCCCC;
+                    margin: 0 10px 0 0;
+                    vertical-align: middle;
+                    .ivu-cascader-rel{
+                        position: relative;
+                        .condi_bar{
+                            .condi_tit{
+                                display: inline-block;
+                                width: 160px;
+                                height: 28px;
+                                box-sizing: border-box;
+                                border: 1px solid #D4D4D4;
+                                border-radius: 4px 0px 0px 4px;
+                                vertical-align: middle;
+                                line-height: 28px;
+                                text-indent: 12px;
+                                font-size: 14px;
+                                text-align: left;
+                            }
+                            .icon_sel{
+                                width: 20px;
+                                height: 28px;
+                                background: url(~@/assets/images/modelingTool/down_whiteicon.png) #337BF7 center center no-repeat;
+                                background-size: 16px 16px;
+                                box-sizing: border-box;
+                                border: 1px solid #2B6BD8;
+                                border-radius: 0px 4px 4px 0px; 
+                            }
+                        }
+                        .else_tit{
+                            font-style: normal;
+                            display: inline-block;
+                            vertical-align: middle;
+                            height: 28px;
+                            text-align: center;
+                            line-height: 28px;
+                            font-size: 14px;
+                            color: #252525;
+                            margin: 0 24px;
+                        }
+                        .var_bar{
+                            display: inline-block;
+                            vertical-align: middle;
+                            height: 28px;
+                            font-size: 14px;
+                            color: #252525;
+                            .other_tit{
+                                display: inline-block;
+                                min-width: 80px;
+                                height: 28px;
+                                line-height: 28px;
+                                vertical-align: middle;
+                            }
+                            .btn_sym{
+                                display: inline-block;
+                                width: 24px;
+                                height: 24px;
+                                line-height: 22px;
+                                border: 1px dotted #337BF7;
+                                vertical-align: middle;
+                                text-align: center;
+                                font-size: 14px;
+                                cursor: pointer;
+                            }
+                            em{
+                                font-style: normal;
+                                display: inline-block;
+                                vertical-align: middle;
+                                height: 28px;
+                                width: 10px;
+                                text-align: center;
+                                line-height: 28px;
+                            }
+                            .other_tit{
+                                font-style: normal;
+                                display: inline-block;
+                                vertical-align: middle;
+                                height: 28px;
+                                text-align: center;
+                                line-height: 28px;
+                            }
+                        }
+                        .inputVal_bar{
+                            position: absolute;
+                            width: 100px;
+                            height: 28px;
+                            left: 0;
+                            top: 0;
+                            background: #ffffff;
+                            vertical-align: middle;
+                            z-index: 100;
+                            .ivu-input-wrapper{
+                                .ivu-input-icon{
+                                    height: 28px;
+                                    line-height: 28px;
+                                }
+                                .ivu-input{
+                                    height: 28px;
+                                    border: 1px solid #337BF7;
+                                    padding: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .icon_del{
+                    background: url(~@/assets/images/modelingTool/deleteicon.png) center center no-repeat;
+                    background-size: 16px 16px;
+                    width: 20px;
+                    height: 28px;
+                    cursor: pointer;
+                }
+                .ivu-select-dropdown{
+                    .ivu-cascader-menu{
+                        .ivu-cascader-menu-item{
+                            font-size: 14px !important;
+                            color: #252525;
+                        }
+                    }
+                }
+            }        
+        }
+        .count_bar{
+            position: absolute;
+            background: #ffffff;
+            width: 120px;
+            left: 0;
+            top: 0;
+            box-sizing: border-box;
+            border:1px solid rgba(197,197,197,1);
+            box-shadow:0px 3px 8px 0px rgba(0, 0, 0, 0.2);
+            border-radius:4px;
+            padding: 8px 0 0;
+            p{
+                height: 28px;
+                line-height: 28px;
+                color: #666666;
+                font-size: 14px;
+                cursor: pointer;
+                text-align: left;
+                text-indent: 10px;
+            }
+            p:hover{
+                color: #ffffff;
+                background: #337BF7;
+            }
+        }
+        .list_wrap{
+            .ivu-table-wrapper{
+                .ivu-table{
+                    .ivu-table-header{
+                        table{
+                            thead{
+                                
+                                tr{
+                                    
+                                    th{
+                                        background: linear-gradient(0deg,rgba(216,216,216,1) 0%,rgba(228,227,228,1) 100%);
+                                        color: #252525;
+                                        font-size: 14px;
+                                        border-right: 1px solid #CCCCCC;
+                                        height: 36px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    .ivu-table-body{
+                        table{
+                            tbody{
+                                tr{
+                                    td{
+                                        background: #F5F5F5;
+                                        border-right: 1px solid #CCCCCC;
+                                        color: #252525;
+                                        font-size: 14px;
+                                        height: 42px;
+                                    }
+                                }
+                                tr:first-child{
+                                    td{
+                                        border-right: none;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .page_box{
+                display: flex;
+                padding: 12px 0;
+                .total_txt{
+                    width: 200px;
+                    text-align: left;
+                    color: #252525;
+                    font-size: 12px;
+                    em{
+                        font-style: normal;
+                        color: #3D91F7;
+                        margin: 0 6px;
+                    }
+                }
+                .ivu-page{
+                    flex: 1;
+                    text-align: right;
+                }
+            }
+        }
+    }
+}
+
+.model_modal{
+  .add_label{
+      .label_name{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      .ivu-input-wrapper{
+        width: 360px;
+      }
+  }
+  .ivu-modal-body{
+      max-height: 500px;
+      overflow: auto;
+  }              
+}

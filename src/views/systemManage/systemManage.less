@@ -1,0 +1,448 @@
+.fake-modal {
+  & > p {
+    font-size: 18px;
+    color: #333333;
+    margin: 25px 0;
+  }
+}
+.accountManage{
+  width: 100%;
+  .account-manage-content {
+    display:flex;
+    text-align: left;
+    padding: 0px 0px 20px 10px;
+    margin-right: 10px;
+    position: relative;
+    .ivu-tabpane-left{
+      min-width: 230px;
+      height: 100%;
+      margin-right: 10px;
+      padding: 10px;
+      background: #fff;
+      .tabpane-left-header{
+        display: flex;
+        margin-bottom: 10px;
+        flex-direction: column;
+        .ivu-select{
+          margin-right: 4px;
+        }
+        .ivu-input-wrapper{
+          margin-right: 8px;
+        }
+      }
+      .rolePart, .orgPart{
+        // background:#fff;
+        // border:1px solid #EBF0F2;
+        // border-radius:4px;
+        & > ul{
+          list-style: none;
+          & > li{
+            height: 35px;
+            padding-left: 8px;
+            line-height: 35px;
+            // border-bottom: 1px solid #EBF0F2;
+            // &:last-child{
+            //   border: none;
+            // }
+            & > span{
+              padding: 5px;
+              &:hover{
+                border:1px solid #5EA4EB;
+                border-radius:2px;
+              }
+            }
+            .selectedSpan{
+              border:1px solid #5EA4EB;
+              border-radius:2px;
+            }
+          }
+        }
+      }
+    }
+    .ivu-tabpane-right{
+      min-width: 800px;
+      flex: 1;
+      .ivu-btn{
+        width: 64px;
+        margin-right: 6px;
+        padding-left: 20px;
+        padding-right: 0;
+        background-repeat: no-repeat;
+        background-position: 8px 50%;
+        background-size: 16px 16px;
+        .ivu-icon{
+          font-weight: bold;
+        }
+      }
+      .auth-btn {
+        background-image: url('~@/assets/images/systemManage/role_auth.png');
+      }
+      .forbidden-btn {
+        background-image: url('~@/assets/images/systemManage/forbidden.png');
+      }
+      .start-btn {
+        background-image: url('~@/assets/images/systemManage/start.png');
+      }
+    }
+    .ivu-table-wrapper{
+      width: 100%;
+      .ivu-table-body {
+        .icon-bg {
+          display: inline-block;
+          margin-left: 12px;
+          width: 16px;
+          height: 16px;
+          cursor: pointer;
+          background-repeat: no-repeat;
+          background-position: center 0;
+          background-size: 100% 100%;
+          vertical-align: sub;
+        }
+        .icon-role-auth {
+          background-image: url('~@/assets/images/systemManage/role_auth.png');
+        }
+        .icon-role-edit {
+          background-image: url('~@/assets/images/systemManage/role_edit.png');
+        }
+        .icon-role-forbidden {
+          background-image: url('~@/assets/images/systemManage/forbidden.png');
+        }
+        .icon-role-start {
+          background-image: url('~@/assets/images/systemManage/start.png');
+        }
+      }
+    }
+    .fake-modal{
+      width: 100%;
+      height: 100%;
+      padding: 24px;
+      border:1px solid #EBF0F2;
+      border-radius:2px;
+      background: #fff;
+      & > p{
+        margin-bottom: 20px;
+        font-size: 18px;
+      }
+      .accountWrapper{
+        width:100%;
+        height: 180px;
+        padding-left: 16px;
+        background:#fff;
+        border:1px solid rgba(220,229,232,1);
+        border-radius:2px;
+        overflow: auto;
+        font-size: 14px;
+      }
+    }
+    .treeNode{
+      width: 36px;
+      // height: 47px;
+      position: absolute;
+      border:1px solid #DCE5E8;
+      background: #F0F4F5;
+      border-radius: 2px;
+      text-align: center;
+      color: #3B72A8;
+      &:hover{
+        cursor: pointer;
+      }
+      & > p {
+        height: 22px;
+        line-height: 22px;
+      }
+      & > p:first-child{
+        border-bottom: 1px solid #DCE5E8;
+      }
+    }
+    .ivu-input-with-prefix {
+      padding-left: 32px;
+    }
+    .ivu-tree-title-selected, .ivu-tree-title-selected:hover {
+      height: 18px;
+      line-height: 18px;
+      border: 1px solid #5EA4EB;
+      border-radius: 2px;
+      color: #5EA4EB;
+      background-color: #fff;
+    }
+  }
+  .account-manage-oa {
+    display:flex;
+    overflow: auto;
+    text-align: left;
+    padding: 0px 0px 20px 10px;
+    margin-right: 10px;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    .ivu-tabpane-middle {
+      position: absolute;
+      top: 40%;
+      // left: 50%;
+      right: 30%;
+      transform: translate(-50%,-50%);
+      p {
+        text-align: center;
+      }
+      .ivu-oa-syncinfo {
+        width: 270px;
+        height: 56px;
+        font-size: 24px;
+        background-color: #3B72A8;
+        text-align: center;
+        line-height: 56px;
+        color: #fff;
+        cursor: pointer;
+      }
+    }
+  }
+}
+.organization{
+  padding: 10px 10px 20px;
+  text-align: left;
+  .header{
+    display: -webkit-box;
+    display:-moz-box;
+    display:box-flex;
+    overflow: auto;
+  }
+  .content{
+    margin-top: 20px;
+    margin-left: 50px;
+    .ivu-tree li ul {
+      margin-top: 10px;
+      padding-left: 30px;
+    }
+  }
+}
+.roleManage{
+  overflow: auto;
+  padding: 0px 10px 20px;
+  text-align: left;
+  .header{
+    min-width: 800px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    .ivu-input {
+      padding: 0 0 0 32px;
+    }
+    .header-add-role {
+      span {
+        color: rgb(59, 114, 168);
+      }
+      img {
+        width: 16px;
+        vertical-align: text-top;
+      }
+    }
+  }
+  .addRole{
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  .content{
+    min-width: 800px;
+    flex: 1;
+    .ivu-btn{
+      width: 64px;
+      height: 32px;
+      padding: 0;
+      .ivu-icon{
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+    .ivu-table-wrapper{
+      .ivu-table{
+        color: #333;
+        font-size: 14px;
+        font-weight: bold;
+        .ivu-table-cell{
+          padding-left: 10px;
+          padding-right: 10px;
+        }
+        .ivu-table-body{
+          .ivu-checkbox-wrapper{
+            margin-right: 0;
+          }
+          .icon-bg {
+            display: inline-block;
+            margin-left: 12px;
+            width: 16px;
+            height: 16px;
+            cursor: pointer;
+            background-repeat: no-repeat;
+            background-position: center 0;
+            background-size: 100% 100%;
+            vertical-align: sub;
+          }
+          .icon-role-auth {
+            background-image: url('~@/assets/images/systemManage/role_auth.png');
+          }
+          .icon-role-edit {
+            background-image: url('~@/assets/images/systemManage/role_edit.png');
+          }
+          .icon-role-delete {
+            background-image: url('~@/assets/images/systemManage/role_delete.png');
+          }
+        }
+      }
+    }
+  }
+}
+.authManage{
+  text-align: left;
+  padding: 0px 10px 20px;
+}
+.logManage{
+  padding: 0px 10px 20px;
+  text-align: left;
+  overflow: auto;
+  .ivu-tabs{
+    .ivu-tabs-bar{
+      padding-bottom: 10px;
+      border-bottom: none;
+      .ivu-tabs-nav-container{
+        height: inherit;
+        .ivu-tabs-nav-wrap{
+          .ivu-tabs-nav-scroll{
+            height: 35px;
+            .ivu-tabs-nav{
+              border: 1px solid #DCE5E8;
+              border-radius: 2px;
+              height: 34px;
+              .ivu-tabs-ink-bar{
+                display: none;
+              }
+              .ivu-tabs-tab{
+                width: 96px;
+                height: 32px;
+                line-height: 32px;
+                padding: 0;
+                margin-right: 0;
+                text-align: center;
+                border: none;
+                border-radius: 0;
+                border-right: 1px solid #DCE5E8;
+                color: #999;
+                background: #fff;
+              }
+              .ivu-tabs-tab:last-child{
+                border-right: none;
+              }
+              .ivu-tabs-tab-active{
+                border: none;
+                border-radius: 0;
+                background-color: #3B72A8;
+                color: #fff;
+              }
+            }
+          }
+        }
+      }
+    }
+    .ivu-tabs-content{
+      .ivu-tabs-tabpane{
+        .header{
+          margin-bottom: 20px;
+          .ivu-input {
+            padding: 0 0 0 32px;
+          }
+        }
+      }
+    }
+  }
+  .loadingLog{
+    min-width: 1030px;
+  }
+}
+// 表格头
+.accountManage, .organization, .roleManage, .authManage, .logManage{
+  .ivu-table{
+    color: #333;
+    font-size: 14px;
+    font-weight: bold;
+    thead th{
+      background: #DEEEFE;
+      color: #3B72A8;
+      font-weight: 400;
+    }
+    .ivu-table-cell{
+      padding-left: 10px;
+      padding-right: 10px;
+      .ivu-icon{
+        font-weight: bold;
+      }
+    }
+    .ivu-table-body{
+      .ivu-checkbox-wrapper{
+        margin-right: 0;
+      }
+    }
+  }
+  // this.$Modal.info模态框
+  .ivu-modal{
+    text-align: center;
+    .ivu-modal-content{
+      min-height: 183px;
+      .ivu-modal-confirm-head{
+        margin-top: 30px;
+        .ivu-modal-confirm-head-title{
+          font-weight: 400;
+        }
+        .ivu-modal-confirm-head-icon{
+          display: none;
+        }
+      }
+      .ivu-modal-confirm-footer{
+        margin-top: 30px;
+        text-align: center;
+        & > button{
+          width:84px;
+          height:36px;
+        }
+      }
+    }
+  }
+  // 居中模态框
+  .center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .ivu-modal{
+      top: 0;
+      .ivu-modal-content{
+        min-height: 183px;
+        .ivu-modal-header{
+          text-align: center;
+          padding-top: 40px;
+          border-bottom: none;
+          .ivu-modal-header-inner{
+            font-size: 16px;
+            font-weight: normal;
+          }
+        }
+        .ivu-modal-footer{
+          border-top: none;
+          & > div{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            & > button{
+              width: 84px;
+            }
+            & > button + button {
+              margin-left: 60px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .ivu-form-item{
+    margin-bottom: 12px;
+  }
+}

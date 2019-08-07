@@ -1,0 +1,514 @@
+.home{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  .home-ceiling{
+    display: flex;
+    flex: 0 0 42px;
+    justify-content: space-between;
+    align-items: center;
+    height: 42px;
+    background: #3B72A8;
+    color: #fff;
+    font-size: 12px;
+    .home-ceiling-left{
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      .left_logo{
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        width: 180px;
+        height: 42px;
+        padding-left: 12px;
+        background: #366799;
+        & > i{
+          display: inline-block;
+          width: 31px;
+          height: 27px;
+          background: url('../../assets/images/login/logo.png') no-repeat;
+          background-size: 100% 100%;
+        }
+        & > span{
+          font-size: 16px;
+          margin-left: 5px;
+        }
+      }
+      .ml14{
+        margin-left: 14px;
+        color: rgba(255, 255, 255, 0.6);
+      }
+    }
+    .home-ceiling-right{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-right: 12px;
+      & > a{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 20px;
+        color: #fff;
+        & > i {
+          display: inline-block;
+          width: 16px;
+          height: 16px;
+          margin-right: 2px;
+        }
+        .interface_tool {
+          background: url('../../assets/images/login/ic_jiemian.png') no-repeat;
+          background-size: 100% 100%;
+        }
+        .model_tool{
+          background: url('../../assets/images/login/ic_moxing.png') no-repeat;
+          background-size: 100% 100%;
+        }
+        .switch_front{
+          background: url('../../assets/images/login/switch.png') no-repeat;
+          background-size: 100% 100%;
+        }
+        .personal{
+          width: 24px;
+          height: 24px;
+          background: url('../../assets/images/login/头像.png') no-repeat;
+          background-size: 100% 100%;
+        }
+      }
+      .ivu-poptip{
+        .ivu-poptip-rel{
+          & > a{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-left: 20px;
+            margin-top: 4px;
+            color: #fff;
+            .export{
+              width: 16px;
+              height: 16px;
+              margin-right: 2px;
+              background: url('../../assets/images/login/daochu.png') no-repeat;
+              background-size: 100% 100%;
+            }
+          }
+        }
+        .ivu-poptip-body {
+          padding: 8px 0px 8px 16px;
+          .ivu-poptip-body-content{
+            width: 312px;
+            height: 124px;
+            padding: 10px 16px;
+            font-size: 14px;
+            color: #333333;
+            overflow: auto;
+            .export_list{
+              display: flex;
+              justify-content: space-between;
+              padding: 10px 0;
+              border-bottom: 1px solid #EBF0F2;
+              cursor: pointer;
+              &:first-child{
+                padding-top: 0;
+              }
+              &:last-child{
+                padding-bottom: 0;
+                border-bottom: none;
+              }
+              .export_left{
+                width: 220px;
+                text-align: left;
+                overflow: hidden;
+                white-space: nowrap;
+                text-overflow: ellipsis;
+              }
+              .export_right{
+                color: #3B72A8;
+              }
+            }
+            .no_export{
+              height: 100px;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.home_box{
+  height: calc(100% - 42px);
+  .ivu-layout-sider{
+    background: #1B2326;
+    .ivu-layout-sider-children{
+      text-align: left;
+      height: inherit;
+      .ivu-menu-dark{
+        background: #1B2326;
+        .ivu-menu-opened{
+          background: #1B2326 !important;
+          color: #fff;
+          .ivu-menu-submenu-title{
+            background: #1B2326 !important;
+            color: #fff;
+          }
+        }
+        .ivu-menu-submenu{
+          background: #1B2326 !important;
+          color: #fff;
+          &:hover{
+            background: #1B2326 !important;
+            color: #fff;
+          }
+          .ivu-menu-submenu-title{
+            background: #1B2326 !important;
+            color: rgba(255, 255, 255, 0.5);
+            &:hover{
+              color: #fff;
+            }
+          }
+        }
+        .ivu-menu-item{
+          color: rgba(255, 255, 255, 0.5);
+          background: #1B2326;
+          &:hover{
+            color: #fff;
+            background: #1B2326;
+          }
+        }
+        .ivu-menu-item-active{
+          background: #252F33 !important;
+          color: #fff;
+        }
+        .ivu-menu-child-item-active{
+          .ivu-menu-submenu-title{
+            color: #fff;
+            .icon{
+              transition: all 0.2s ease-in-out;
+              &.icon_alarmCenter{
+                background: url(~@/assets/images/menu/alarmCenterW.png);
+              }
+              &.icon_appCenter{
+                background: url(~@/assets/images/menu/appCenterW.png);
+              }
+              &.icon_dataDictionary{
+                background: url(~@/assets/images/menu/dataDictionaryW.png);
+              }
+              &.icon_dataSoucMana{
+                background: url(~@/assets/images/menu/dataSoucManaW.png);
+              }
+              &.icon_sysMana{
+                background: url(~@/assets/images/menu/sysManaW.png);
+              }
+            }
+          }
+          &.ivu-menu-opened{
+            .ivu-menu-submenu-title{
+              color: rgba(255, 255, 255, 0.5);
+              .icon{
+                transition: all 0.2s ease-in-out;
+                &.icon_alarmCenter{
+                  background: url(~@/assets/images/menu/alarmCenter.png);
+                }
+                &.icon_appCenter{
+                  background: url(~@/assets/images/menu/appCenter.png);
+                }
+                &.icon_dataDictionary{
+                  background: url(~@/assets/images/menu/dataDictionary.png);
+                }
+                &.icon_dataSoucMana{
+                  background: url(~@/assets/images/menu/dataSoucMana.png);
+                }
+                &.icon_sysMana{
+                  background: url(~@/assets/images/menu/sysMana.png);
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .ivu-layout-sider-trigger{
+      background: #1B2326;
+    }
+  }
+  .home_content{
+    display: flex;
+    flex-direction: column;
+    // overflow-x: inherit !important;
+    // min-width: 1050px;
+    .home_bottom{
+      text-align: center;
+      line-height: 40px;
+      font-size:12px;
+      color: #999999;
+    }
+    .ivu-tabs{
+      overflow: visible;
+      flex: 0 0 42px;
+    }
+    .ivu-breadcrumb {
+      flex: 0 0 38px;
+      text-align: left;
+      padding-left: 12px;
+      padding-bottom: 20px;
+    }
+    .home_content_inner {
+      flex: 1;
+      overflow: auto;
+      .home_content_inner_layout {
+        height: 100%;
+      }
+      .home_bottom {
+        height: 48px;
+        line-height: 24px;
+        padding-top: 12px;
+        padding-bottom: 12px;
+      }
+    }
+    .ivu-tabs-bar{
+      margin-bottom: 10px;
+      .ivu-tabs-nav-container{
+        .ivu-tabs-nav-wrap{
+          .ivu-tabs-nav-scroll{
+            .ivu-tabs-nav{
+              &>div:nth-child(2){
+                &>i{
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.menu-item span{
+  display: inline-block;
+  overflow: hidden;
+  // width: 69px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  vertical-align: bottom;
+  transition: width .2s ease .2s;
+  font-size: 14px;
+}
+.menu-item i{
+  transform: translateX(0px);
+  transition: font-size .2s ease, transform .2s ease;
+  vertical-align: top;
+  font-size: 22px;
+}
+.collapsed-menu span{
+  width: 0px;
+  transition: width .2s ease;
+}
+.collapsed-menu i{
+  transform: translateX(5px);
+  transition: font-size .2s ease .2s, transform .2s ease .2s;
+  vertical-align: top;
+  font-size: 22px;
+}
+.ivu-menu-vertical .ivu-menu-submenu-title-icon {
+  display: none;
+}
+.ivu-menu{
+  & > .ivu-menu-item{
+    padding-left: 60px !important;
+    padding-right: 0 !important;
+  }
+}
+.ivu-menu-item{
+  display: flex;
+  align-items: center;
+  padding-right: 0px !important;
+  & > i{
+    margin-right: 6px;
+  }
+  .icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: all 0.2s ease-in-out;
+    &.icon_alarmCenter{
+      background: url(~@/assets/images/menu/alarmCenter.png);
+    }
+    &.icon_assetsMana{
+      background: url(~@/assets/images/menu/assetsMana.png);
+    }
+  }
+  &:hover{
+    .icon{
+      &.icon_alarmCenter{
+        background: url(~@/assets/images/menu/alarmCenterW.png);
+      }
+      &.icon_assetsMana{
+        background: url(~@/assets/images/menu/assetsManaW.png);
+      }
+    }
+  }
+  &.ivu-menu-item-active{
+    &.ivu-menu-item-selected{
+      .icon{
+        &.icon_alarmCenter{
+          background: url(~@/assets/images/menu/alarmCenterW.png);
+        }
+        &.icon_assetsMana{
+          background: url(~@/assets/images/menu/assetsManaW.png);
+        }
+      }
+    }
+  }
+}
+.ivu-layout-sider-trigger{
+  position: absolute;
+  max-width: 180px;
+  top: 0px;
+  height: 18px;
+  padding-right: 6px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  .ivu-icon-ios-arrow-back:before {
+    content: '';
+  }
+  .ivu-layout-sider-trigger-icon{
+    width: 16px;
+    height: 16px;
+    background: url(~@/assets/images/menu/openMenu.png);
+    &:hover{
+      background: url(~@/assets/images/menu/openMenu2.png);
+    }
+  }
+}
+.ivu-menu-submenu-title{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-right: 0px !important;
+  & > i {
+    margin-right: 6px;
+  }
+  .icon{
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    transition: all 0.2s ease-in-out;
+    &.icon_appCenter{
+      background: url(~@/assets/images/menu/appCenter.png);
+    }
+    &.icon_dataDictionary{
+      background: url(~@/assets/images/menu/dataDictionary.png);
+    }
+    &.icon_dataSoucMana{
+      background: url(~@/assets/images/menu/dataSoucMana.png);
+    }
+    &.icon_sysMana{
+      background: url(~@/assets/images/menu/sysMana.png);
+    }
+  }
+  &:hover{
+    .icon{
+      transition: all 0.2s ease-in-out;
+      &.icon_appCenter{
+        background: url(~@/assets/images/menu/appCenterW.png);
+      }
+      &.icon_dataDictionary{
+        background: url(~@/assets/images/menu/dataDictionaryW.png);
+      }
+      &.icon_dataSoucMana{
+        background: url(~@/assets/images/menu/dataSoucManaW.png);
+      }
+      &.icon_sysMana{
+        background: url(~@/assets/images/menu/sysManaW.png);
+      }
+    }
+  }
+}
+.collapsed-menu{
+  .ivu-menu-submenu-title{
+    margin-left: -5px;
+  }
+  .ivu-menu-item{
+    margin-left: -5px;
+  }
+}
+.collapsed_menu{
+  height: 294px;
+  background: #1B2326;
+  .col_menu_item{
+    height: 49px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .icon{
+      width: 16px;
+      height: 16px;
+      &.icon_alarmCenter{
+        background: url(~@/assets/images/menu/alarmCenter.png);
+      }
+      &.icon_assetsMana{
+        background: url(~@/assets/images/menu/assetsMana.png);
+      }
+      &.icon_appCenter{
+        background: url(~@/assets/images/menu/appCenter.png);
+      }
+      &.icon_dataDictionary{
+        background: url(~@/assets/images/menu/dataDictionary.png);
+      }
+      &.icon_dataSoucMana{
+        background: url(~@/assets/images/menu/dataSoucMana.png);
+      }
+      &.icon_sysMana{
+        background: url(~@/assets/images/menu/sysMana.png);
+      }
+      &.icon_alarmCenter_W{
+        background: url(~@/assets/images/menu/alarmCenterW.png);
+      }
+      &.icon_assetsMana_W{
+        background: url(~@/assets/images/menu/assetsManaW.png);
+      }
+      &.icon_appCenter_W{
+        background: url(~@/assets/images/menu/appCenterW.png);
+      }
+      &.icon_dataDictionary_W{
+        background: url(~@/assets/images/menu/dataDictionaryW.png);
+      }
+      &.icon_dataSoucMana_W{
+        background: url(~@/assets/images/menu/dataSoucManaW.png);
+      }
+      &.icon_sysMana_W{
+        background: url(~@/assets/images/menu/sysManaW.png);
+      }
+    }
+  }
+}
+.ivu-menu-vertical.ivu-menu-light:after {
+  background: #1B2326;
+}
+.cont_menu{
+  position: absolute;
+  width: 144px;
+  background: #fff;
+  border: 1px solid #C5D0D4;
+  box-shadow:0px 0px 10px 0px rgba(0, 0, 0, 0.3);
+  border-radius:4px;
+  font-size: 14px;
+  color: #333;
+  padding: 6px 0;
+  .con_menu_item{
+    height: 24px;
+    line-height: 24px;
+    padding-left: 12px;
+    text-align: left;
+    cursor: pointer;
+    &:hover{
+      background: #3B72A8;
+      color: #fff;
+    }
+  }
+}

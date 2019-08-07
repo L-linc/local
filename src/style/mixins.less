@@ -1,0 +1,68 @@
+.clearfix {
+  &:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+// 页面图标，共四种尺寸
+.icon-mix(@width) {
+  display: inline-block;
+  width: @width;
+  height: @width;
+}
+.icon-xlg {
+  .icon-mix(64px);
+}
+
+.icon-lg {
+  .icon-mix(38px);
+}
+
+.icon-md {
+  .icon-mix(16px);
+}
+
+.icon-sm {
+  .icon-mix(10px);
+}
+
+// 输入框尺寸
+// 用于新开页面，大尺寸输入框
+.input-page-lg {
+  width: 360px;
+  height: 36px;
+}
+// 用于弹窗，大尺寸输入框
+.input-frame-lg {
+  width: 318px;
+  height: 36px;
+}
+// 用于搜索栏
+.input-search-md {
+  width: 280px;
+  height: 36px;
+}
+// 用于时间选择器
+.input-time-select {
+  width: 210px;
+  height: 28px;
+}
+// 用于侧边搜索框/输入框
+.input-search-sm {
+  width: 92px;
+  height: 28px;
+  padding-left: 10px;
+}
+// 用于并列多项选框
+.input-multiple-sm {
+  width: 86px;
+  height: 36px;
+  padding-left: 6px;
+}
+.over-text {
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

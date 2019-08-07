@@ -1,0 +1,331 @@
+/*-------基础样式--------*/
+.ass_wrap{
+  position: relative;
+  padding: 0 24px 0 12px;
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  .com_top{
+    padding: 0 0 12px;
+    .top_add{
+      text-align: right;
+    }
+  }
+  .com_tab{
+    display: flex;
+    width: 100%;
+    height: calc(100% - 44px);
+    .tab_sear{
+      width: 230px;
+      box-sizing: border-box;
+      padding: 12px;
+      border: 1px solid #EBF0F2;
+      background-color: #ffffff;
+      margin-right: 12px;
+      overflow: auto;
+      .ivu-tree{
+        text-align: left;
+      }
+      .ivu-select-selection{
+        border-radius: 2px;
+        height: 28px;
+      }
+      .sear_cols{
+        padding: 12px 0;
+        white-space: nowrap;
+        overflow: hidden;
+        .ivu-input-wrapper{
+          width: 133px;
+          .ivu-input{
+            padding: 4px 0 4px 24px;
+            border-radius: 2px;
+            height: 28px;
+          }
+        }
+        .btn_sear{
+          width: 40px;
+          padding: 3px 0;
+          border-radius: 2px;
+          margin: 0 0 0 2px;
+          height: 28px;
+        }
+      }
+    }
+    .tab_con{
+      width: calc(100% - 230px);
+      .page_box{
+        text-align: right;
+        padding: 15px 0;
+      }
+    }    
+    
+  }
+}
+
+// 添加/编辑资产,模态框样式
+.add_assets{
+  width: 480px;
+  .ivu-modal-content{
+    background: #F7FBFC;
+    .ivu-modal-body{
+      padding-left: 42px;
+      padding-right: 42px;
+    }
+  }
+  .ivu-form-item-content{
+    .sear_btn{
+      width: 52px;
+      height: 32px;
+      padding: 0;
+      margin-left: 6px;
+    }
+    .assets_tree_border{
+      height: 160px;
+      padding-left: 8px;
+      margin-top: 6px;
+      border: 1px dashed #DCE5E8;
+      overflow: auto;
+      .ivu-tree ul li{
+        margin: 0;
+      }
+    }
+  }
+}
+
+// 添加资产,页面时样式
+// .add_wrap{
+//   margin: 12px 24px 12px 12px;
+//   border: 1px solid #EBF0F2;
+//   background-color: #ffffff;
+//   padding: 24px;
+//   box-sizing: border-box;
+//   .add_top{
+//     color: #666666;
+//     font-size: 16px;
+//     text-align: left;
+//     padding: 0 0 28px;
+//   }
+//   .add_form{
+//     .add_li{
+//       display: block;
+//       text-align: left;
+//       margin: 0 0 12px;
+//       .li_tit{
+//         width: 72px;
+//         display: inline-block;
+//         text-align: right;
+//       }
+//       .ivu-select{
+//         width: 360px;
+//         .ivu-select-selection{         
+//           border-radius: 2px;
+//           height: 36px;
+          
+//         }
+//       }
+//       .ivu-input-wrapper{
+//         width: 360px;
+//         .ivu-input{
+//           border-radius: 2px;
+//           height: 36px;
+//         }
+//       }
+//       .ivu-tree{
+//         padding: 0 0 0 72px;
+//       }
+//     }
+//   }
+//   .add_foot{
+//     text-align: left;
+//     padding: 32px 0 20px;
+//     .ivu-btn{     
+//       width: 120px;
+//       border-radius: 2px;
+//       height: 42px;
+//     }
+//     .ivu-btn:nth-child(1){
+//       margin: 0 48px 0 110px;
+//     }
+//   }
+// }
+
+.ivu-modal-wrap{
+  .ivu-modal{
+    .ivu-modal-body{
+      .add_label{
+        display: block;
+        .label_name{
+          display: inline-block;
+          width: 80px;
+          text-align: right;
+        }
+        .ivu-input-wrapper{
+          width: 318px;
+        }
+        .ivu-select{
+          width: 76px;
+          height: 36px;
+          margin: 0 5px 0 0;
+        }
+      }
+      .add_label:nth-child(2){
+        margin: 12px 0 0;
+      }
+    }
+  }
+}
+// .det_wrap{
+//   padding: 23px 24px 0 12px;
+//   .tab_con{
+//     flex: 1;
+//     .con_tit{
+//       font-size: 16px;
+//       color: #999999;
+//       text-align: left;
+//     }
+//     .con_menu{
+//       padding: 23px 0 24px;
+//       text-align: left;
+//       font-size: 0;
+//       span{
+//         display: inline-block;
+//         width: 96px;
+//         height: 32px;
+//         line-height: 32px;
+//         box-sizing: border-box;
+//         border: 1px solid #DCE5E8;
+//         text-align: center;
+//         color: #999999;
+//         font-size: 14px;
+//         background: #ffffff;
+//         border-radius: 2px 0 0 2px;
+//         cursor: pointer;
+//       }
+//       .menu_act{
+//         background: #3B72A8;
+//         color: #ffffff;
+//       }
+//       span:hover{
+//         background: #3B72A8;
+//         color: #ffffff;
+//       }
+//     }
+//   }
+// }
+
+// .con_wrap{
+//   border-radius: 2px;
+//   background: #ffffff;
+//   border: 1px solid #EBF0F2;
+//   text-align: left;
+//   padding: 24px 23px;
+//   .attr_li{
+//     margin: 0 0 12px;
+//     span{
+//       display: inline-block;
+//       text-align: right;
+//       width: 100px;
+//     }
+//     .ivu-select{
+//       width: 360px;
+//       .ivu-select-selection{         
+//         border-radius: 2px;
+//         height: 36px;
+//         span{
+//           text-align: left;
+//         }
+//       }
+//     }
+//     .ivu-input-wrapper{
+//       width: 360px;
+//       .ivu-input{
+//         border-radius: 2px;
+//         height: 36px;
+//       }
+//     }
+//     .tree_sel{
+//       width: 90px;
+//     }
+//   }
+//   .attr_foot{
+//     text-align: left;
+//     padding: 32px 0 20px;
+//     .ivu-btn{     
+//       width: 120px;
+//       border-radius: 2px;
+//       height: 42px;
+//     }
+//     .ivu-btn:nth-child(1){
+//       margin: 0 48px 0 110px;
+//     }
+//   }
+// }
+
+// .app_wrap{
+//   .app_menu{
+//     text-align: left;
+//     span{
+//       font-size: 14px;
+//       color: #999999;
+//       margin-right: 24px;
+//       height: 29px;
+//       line-height: 29px;
+//       cursor: pointer;
+//     }
+//     .menu_act{
+//       color: #3B72A8;
+//       border-bottom: 2px solid #3B72A8;
+//     }
+//   }
+// }
+
+// .cyc_wrap{
+//   .cycle_li{
+//     margin: 0 0 12px;
+//     span{
+//       width: 64px;
+//       text-align: right;     
+//     }
+//     .ivu-input-wrapper{
+//       width: 360px;
+//       .ivu-input{
+//         border-radius: 2px;
+//         height: 36px;
+//       }
+//     }
+//   }
+//   .ivu-table-wrapper{
+//     margin: 36px 0 0;
+//   }
+// }
+
+.app_icon{
+  width: 16px;
+  height: 16px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.app_icon_search{
+  background: url(~@/assets/images/appCenter/app_search.png);
+  background-size: 100% 100%;
+}
+.app_icon_edit{
+  background: url(~@/assets/images/appCenter/app_edit.png);
+  background-size: 100% 100%;
+}
+.app_icon_del{
+  background: url(~@/assets/images/appCenter/app_del.png);
+  background-size: 100% 100%;
+}
+// .alarm_more{
+//   position: absolute;
+//   top: 4px;
+//   left: 6px;
+//   background: url(~@/assets/images/alarmCenter/jia.png);
+// }
+// .alarm_less{
+//   position: absolute;
+//   top: 4px;
+//   left: 6px;
+//   background: url(~@/assets/images/alarmCenter/jian.png);
+// }

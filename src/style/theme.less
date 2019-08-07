@@ -1,0 +1,125 @@
+/* 覆盖修改Iview的主题 */
+@import './constants.less';
+@import '~iview/src/styles/index.less';
+
+// Color
+@primary-color: @main-color;
+
+.ivu-input{
+  padding: 4px 0 4px 16px;
+  border-radius: 2px;
+}
+.ivu-select-selection {
+  border-radius: 2px;
+}
+.ivu-table-header {
+  th{
+    height: 32px;
+  }
+}
+
+.ivu-btn-primary.disabled, .ivu-btn-primary[disabled], fieldset[disabled] .ivu-btn-primary, .ivu-btn-primary.disabled:hover, .ivu-btn-primary[disabled]:hover, fieldset[disabled] .ivu-btn-primary:hover, .ivu-btn-primary.disabled:focus, .ivu-btn-primary[disabled]:focus, fieldset[disabled] .ivu-btn-primary:focus, .ivu-btn-primary.disabled:active, .ivu-btn-primary[disabled]:active, fieldset[disabled] .ivu-btn-primary:active, .ivu-btn-primary.disabled.active, .ivu-btn-primary[disabled].active, fieldset[disabled] .ivu-btn-primary.active {
+  color: #999;
+  background-color: #F3F3F3;
+}
+.ivu-table-cell {
+  div, span {
+    font-size: 14px;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+  }
+  & > span{
+    display: block;
+  }
+  div {
+    > span {
+      display: block;
+    }
+  }
+}
+
+// table tooltip样式
+.ivu-tooltip-inner{
+  word-break: break-all;
+}
+
+// 表头
+.ivu-table{
+  .ivu-table-header{
+    th{
+      padding: 0;
+      height: 32px;
+      background: #DEEEFE;
+      font-weight: 400;
+      font-size: 14px;
+      color: #3B72A8;
+    }
+  }
+}
+
+.ivu-breadcrumb {
+  font-size: 12px;
+  span:last-child {
+    font-weight: 400;
+    color: #999999;
+    margin: 0 2px;
+  }
+}
+.ivu-tabs.ivu-tabs-card {
+  .ivu-tabs-bar {
+    .ivu-tabs-tab {
+      color: #666;
+      margin-right: 0;
+      border-radius: 0;
+      border-left: 0;
+    }
+    .ivu-tabs-tab-active {
+      border-color: #EBF0F2;
+    }
+    .ivu-tabs-tab-focused {
+      border-color: #EBF0F2 !important;
+    }
+  }
+}
+// 模态框居中同意处理,加上 class-name="vertical-center-modal"
+// .vertical-center-modal{
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   .ivu-modal{
+//     top: 0;
+//   }
+// }
+
+// textarea Input
+.ivu-input-wrapper{
+  textarea{
+    height: 160px;
+    padding-right: 16px;
+  }
+}
+.ivu-checkbox-wrapper {
+  .ivu-checkbox-checked {
+    &:hover {
+      .ivu-checkbox-inner {
+        border-color: #4DD67F;
+        background-color: #4DD67F;
+      }  
+    }
+    .ivu-checkbox-inner {
+      border-color: #4DD67F;
+      background-color: #4DD67F;
+    }
+  }
+}
+
+.ivu-modal-wrap{
+  .ivu-modal{
+    border-radius: 4px;
+    .ivu-modal-content {
+      background: #F7FBFC;
+    }
+  }
+}
