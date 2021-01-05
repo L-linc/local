@@ -24,7 +24,7 @@
     "@vue/cli-plugin-babel": "^3.3.0",
     "@vue/cli-plugin-typescript": "^3.3.0",
     "@vue/cli-service": "^3.3.0",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "jsonwebtoken": "^8.4.0",
     "less": "^3.9.0",
     "less-loader": "^4.1.0",
